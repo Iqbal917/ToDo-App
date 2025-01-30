@@ -4,11 +4,9 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #4ba3fce0;
+    background: linear-gradient(135deg, #6a11cb, #717375); /* Gradient background */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,17 +15,25 @@ body {
 }
 
 .container {
-    background-color: white;
-    padding: clamp(1rem, 4vw, 2.5rem);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     border-radius: clamp(4px, 1vw, 12px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: clamp(1rem, 4vw, 2.5rem);
     width: min(400px, 90vw);
     min-height: min-content;
     margin-top: 2rem;
+    color: white;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    color: #1a73e8;
+    color: #d8e1ee;
     margin-bottom: clamp(1rem, 3vw, 2rem);
     text-align: center;
     font-size: clamp(1.5rem, 4vw, 2rem);
@@ -46,6 +52,7 @@ input {
     border-radius: 4px;
     font-size: 0.875rem;
     transition: border-color 0.2s, box-shadow 0.2s;
+    
 }
 
 input:focus {
@@ -86,6 +93,7 @@ ul {
     max-height: 60vh;
     overflow-y: auto;
     padding-right: 0.25rem;
+    color: #1557b0;    
 }
 
 ul::-webkit-scrollbar {
