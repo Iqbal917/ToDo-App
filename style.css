@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri,Arial, sans-serif;
     background: linear-gradient(135deg, #6a11cb, #717375); /* Gradient background */
     min-height: 100vh;
     display: flex;
@@ -28,7 +28,7 @@ body {
 }
 
 .container:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -53,6 +53,11 @@ input {
     font-size: 0.875rem;
     transition: border-color 0.2s, box-shadow 0.2s;
     
+}
+
+#todoInput {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
 }
 
 input:focus {
