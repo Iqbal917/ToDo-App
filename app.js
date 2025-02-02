@@ -76,3 +76,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial render
   renderTodos();
 });
+
+// Create and append blur overlay on page load
+window.addEventListener("load", () => {
+  const overlay = document.createElement("div");
+  overlay.className = "blur-overlay";
+
+  // Remove overlay after animation
+  overlay.addEventListener("animationend", () => {
+    overlay.remove();
+  });
+
+  document.body.appendChild(overlay);
+});
