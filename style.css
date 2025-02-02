@@ -206,9 +206,9 @@ ul::-webkit-scrollbar-thumb:hover {
   width: 100%;
   height: 100vh;
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* For Safari */
-  animation: sweepBlur 1.5s ease-out forwards;
-  pointer-events: none; /* Allows clicks through the overlay */
+  -webkit-backdrop-filter: blur(8px);
+  animation: sweepBlur 1s ease-out forwards;
+  pointer-events: none;
   z-index: 9999;
 }
 
